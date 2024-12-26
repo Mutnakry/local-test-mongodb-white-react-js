@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+* {
+  font-family: "Noto Sans Khmer", sans-serif;
+  font-weight: 600;
+}
+
+@layer components {
+  .input_text {
+    @apply p-2 placeholder:font-NotoSansKhmer w-full border-2 outline-none bg-gray-50/20 focus:border-blue-500;
+  }
+
+  .button_only_submit {
+    @apply bg-blue-600 px-5 py-2 text-white flex items-center gap-1 hover:bg-blue-400 font-NotoSansKhmer font-bold;
+  }
+  .button_add_tempo_submit {
+    @apply border-2 px-5 py-2 text-black border-blue-500/90 flex items-center gap-1 hover:bg-gray-100 font-NotoSansKhmer font-bold;
+  }
+
+  .button_only_close {
+    @apply border-2 px-5 border-gray-400 hover:border-red-300 font-bold py-1.5 font-NotoSansKhmer;
+  }
+
+  .select_page_size {
+    @apply px-5 p-2 placeholder:font-NotoSansKhmer border-2 outline-none bg-gray-50/20 focus:border-blue-500;
+  }
+  
+}
+
+* {
+  font-family: "Noto Sans Khmer", sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+td,
+th {
+  border: 1px solid #f5f7f8;
+  text-align: left;
+  padding: 8px;
+}
+
+@layer base {
+  tr:nth-child(even) {
+    @apply bg-blue-500/10  text-black/70;
+  }
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
